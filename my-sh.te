@@ -1,0 +1,11 @@
+
+module my-sh 1.0;
+
+require {
+	type admin_home_t;
+	type httpd_t;
+	class file ioctl;
+}
+
+#============= httpd_t ==============
+allow httpd_t admin_home_t:file ioctl;
